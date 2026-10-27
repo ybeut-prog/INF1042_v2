@@ -3,12 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/module_03_tache_05/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="~/Work/INF1042_v2/exercices/module_03/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
-  <component name="PackageRequirementsSettings" />
-  <component name="PyDocumentationSettings" />
-  <component name="ReSTService" />
-  <component name="TestRunnerService" />
 </module>
