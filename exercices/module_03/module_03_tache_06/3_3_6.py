@@ -1,0 +1,7 @@
+print("Je demande deux valeurs décimales")
+D1 = float(input("Entrez la première valeur décimale : "))
+D2 = float(input("Entrez la deuxième valeur décimale : "))
+print(float(D1))
+print(float(D2))
+print("Produit", float(D1)*float(D2))
+print("Différence", float(D1)-float(D2))
