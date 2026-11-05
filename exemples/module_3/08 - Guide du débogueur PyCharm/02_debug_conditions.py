@@ -9,4 +9,6 @@ scores = [5, 12, 18, 27, 31, 45]
 
 for index, score in enumerate(scores):
     statut = "réussite" if score >= 30 else "à améliorer"
-    print(index, score, statut)
+
+print(index, score, statut)
+print
