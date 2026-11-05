@@ -25,20 +25,20 @@ def generate_math_problem(min_val=1, max_val=10):
     return problem_text, correct_answer
 
 if __name__ == "__main__":
-    print("Welcome to the Random Math Quiz! (Type 'exit' to quit)\n")
+    print("Bienvenue à la questionnaire de math! (Écrit exit pour quitter)\n")
 
     while True:
         problem, answer = generate_math_problem()
 
         user_input = input(f"What is {problem}? ")
         if user_input.strip().lower() == 'exit':
-            print("Thanks for playing!")
+            print("Merci pour jouer!")
             break
 
         try:
             if int(user_input) == answer:
-                print("✅ Correct!")
+                print("Correct!")
             else:
-                print(f"❌ Incorrect. The correct answer was {answer}.")
+                print(f"Mal réponse, c'était {answer}.")
         except ValueError:
-            print("Please enter a valid integer.")
+            print("Pas un réponse")
