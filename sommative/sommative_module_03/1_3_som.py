@@ -1,4 +1,6 @@
-print("Heures en un année:", 365*24)
-print("Secondes en un année:", 365*60**2)
-print("Minutes en un année:", 365*60*2)
+Jours = 365*1
+Heures = 365*24
+Secondes = 365*24*60**2
+Minutes = 365*60*24
+print(f"Jours: {Jours}\nHeures: {Heures}\nMinutes: {Minutes}\nSeconds: {Secondes}")
 
