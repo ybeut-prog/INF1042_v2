@@ -1,0 +1,20 @@
+# 1
+élève = {
+    "nom": "Alex",
+    "age": 16,
+    "programme": "Informatique"
+}
+
+notes = {"math": 78, "Français": 85, "science": 91}
+
+# 2
+print(notes["science"])
+
+# 3
+notes["histoire"] = 88
+notes["math"] = 82
+
+# 4
+for matiere, note in notes.items():
+    print(f"Matière: {matiere} | Note: {note}")
+
