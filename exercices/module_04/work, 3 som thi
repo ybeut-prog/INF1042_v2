@@ -1,0 +1,52 @@
+def compter_mots(paragraphe):
+
+    # Mettre tout le texte en minuscules
+    paragraphe = paragraphe.lower()
+
+    # Remplacer la ponctuation par des espaces
+    paragraphe = (paragraphe
+        .replace(",", " ")
+        .replace(".", " ")
+        .replace("!", " ")
+        .replace("?", " ")
+        .replace(":", " ")
+        .replace(";", " ")
+        .replace("'", " ")
+        .replace("’", " ")
+        .replace('"', " ")
+        .replace("(", " ")
+        .replace(")", " ")
+        .replace("-", " ")
+    )
+
+    mots = paragraphe.split()
+
+    dictionnaire = {}
+
+    for mot in mots:
+        if mot in dictionnaire:
+            dictionnaire[mot] += 1
+        else:
+            dictionnaire[mot] = 1
+    mots_uniques = set(mots)
+
+    while mots_uniques:
+        plus_frequent = ""
+        maximum = 0
+
+        for mot in mots_uniques:
+            if mots.count(mot) > maximum:
+                maximum = mots.count(mot)
+                plus_frequent = mot
+
+        print(plus_frequent, ":", maximum)
+        mots_uniques.remove(plus_frequent)
+
+    return dictionnaire
+paragraphe = """Dans un coin oublié d’un vieux laboratoire, vivait un petit ordinateur gris qui passait ses journées à calculer sagement, afficher des tableaux et clignoter avec fierté. Il n’était ni rapide, ni puissant, mais il était heureux de rendre service."""
+
+resultat = compter_mots(paragraphe)
+
+print(resultat)
+
+
