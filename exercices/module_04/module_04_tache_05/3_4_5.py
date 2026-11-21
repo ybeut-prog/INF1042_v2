@@ -1,0 +1,5 @@
+valeurs = (53, 23, 56, 74, 85, 22, 34)
+list = list(valeurs)
+list.insert(0, 99)
+valeurs = tuple(list)
+print(valeurs)

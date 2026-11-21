@@ -1,3 +1,8 @@
-notes = (89, 24, 64, 77, 85, 75, 19, 73, 90, 99, 88, 83)
-moyenne = sum(notes)/len(notes)
-print(moyenne)
+L = [3, -1, 4, -2, 0, 5, -9]
+
+for x in L[:]:
+    if x < 0:
+        print(x)
+        L.remove(x)
+
+print(L)

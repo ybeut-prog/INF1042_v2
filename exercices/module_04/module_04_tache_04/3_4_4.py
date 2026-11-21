@@ -1,5 +1,5 @@
-valeurs = (53, 23, 56, 74, 85, 22, 34)
-list = list(valeurs)
-list.insert(0, 99)
-valeurs = tuple(list)
-print(valeurs)
+n = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+pairs = n[::2]
+inverse = n[::-1]
+print(pairs)
+print(inverse)
