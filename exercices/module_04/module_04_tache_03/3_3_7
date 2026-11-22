@@ -1,0 +1,13 @@
+import random
+
+# Créer deux sets aléatoires
+A = set(random.randint(1, 20) for i in range(10))
+B = set(random.randint(1, 20) for i in range(10))
+
+# Opérations sur les sets
+print("Set A :", A)
+print("Set B :", B)
+
+print("Union :", A | B)
+print("Intersection :", A & B)
+print("Différence :", A - B)
